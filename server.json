@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.feedbackpulse/mcp",
+  "title": "FeedbackPulse",
+  "description": "Employee engagement surveys, performance reviews, recognition, and team pulse tools for AI assistants.",
+  "version": "1.0.0",
+  "websiteUrl": "https://feedbackpulse.com/",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.feedbackpulse.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer personal API token from FeedbackPulse Settings > Integrations (Admin). OAuth is preferred for Claude Desktop / Claude.ai.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
